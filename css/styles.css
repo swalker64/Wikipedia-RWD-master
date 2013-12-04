@@ -110,6 +110,11 @@ footer a {
 	body {
 		background: yellow;	
 	}
+	.facts {
+		float: none;
+		text-align: left;
+		width: 100%;	
+	}
 
 } /* end of Desktop */
 
@@ -125,7 +130,8 @@ footer a {
 	
 	nav li {
 		float: none;
-		background: khaki;
+		margin: 2.0833333% 0; /*target is 20px, divide it by max-width of nav li, 
+						which is 100%, which is 960px in this context */
 		text-align: center;
 		width: inherit;
 	}
