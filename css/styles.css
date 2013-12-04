@@ -50,6 +50,15 @@ footer {
 	NAV
 ===============*/
 
+nav li {
+	float: left;
+	list-style: none;
+	margin: 0 20px;
+}
+nav {
+	float: left;
+}
+
 
 /*===============
 	TYPOGRAPHY
@@ -83,12 +92,23 @@ footer a {
 
 
 /*===============
-	DESKTOP
+	LARGE DESKTOP
 ===============*/
 @media screen and ( max-width: 1440px ) {
 	
 	body {
 		background: red;	
+	}
+
+} /* end of Desktop */
+
+/*===============
+	STANDARD DESKTOP
+===============*/
+@media screen and ( max-width: 1280px ) {
+	
+	body {
+		background: yellow;	
 	}
 
 } /* end of Desktop */
@@ -102,7 +122,18 @@ footer a {
 	body {
 		background: green;	
 	}
-
+	
+	nav li {
+		float: none;
+		background: khaki;
+		text-align: center;
+		width: inherit;
+	}
+	nav ul {
+		margin-left: 0;
+		padding: 0;	 
+	}
+	
 } /* end of tablet */
 
 /*===============
@@ -116,6 +147,14 @@ footer a {
 	
 	aside {
 		float: none;	
+	}
+	
+	.facts {
+		width: 100%;
+		text-align: left;
+	}
+	aside {
+		text-align: center;
 	}
 
 } /* end of phone */
