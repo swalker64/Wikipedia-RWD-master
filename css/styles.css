@@ -1,4 +1,12 @@
 /*===============
+	GLOBAL
+===============*/
+img {
+	max-width: 100%;	
+}
+
+
+/*===============
 	LAYOUT
 ===============*/
 .container {
@@ -28,7 +36,7 @@ aside {
 .facts {
 	background: pink;
 	float: right;
-	width: 160px; 
+	width: 50%; 
 }
 
 footer {
