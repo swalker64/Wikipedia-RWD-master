@@ -2,10 +2,10 @@
 	GLOBAL
 ===============*/
 img {
-	max-width: 100%;		
+	max-width: 100%;
 }
-
-
+ 
+ 
 /*===============
 	LAYOUT
 ===============*/
@@ -15,82 +15,82 @@ img {
 	width: 95%; /* 960px */
 	max-width: 95%; /* 960px */
 }
-
+ 
 nav {
 	background: #FFC;
 	width: 100%; /* 960px / 960px = 100% */ 
 }
-
+ 
 article {
 	background: #FCF;
 	float: left;
 	width: 66.66666666%; /* 640px / 960px = 66.66666666% */
 }
-
+ 
 aside {
 	background: #660;
 	float: left;
 	width: 33.3333333%; /* 320px / 960px = 33.3333333%*/
 }
-
+ 
 .facts {
 	background: pink;
 	float: right;
-	width: 50%; 
+	padding: 6.25%; /* 20 / 320px = */ 
+	width: 50%; /* 120px / 320px = 50% */
 }
-
+ 
 footer {
 	background: maroon;
 	clear: both; 
 	width: 100%; /* 960px */
 }
-
-
+ 
+ 
 /*===============
 	NAV
 ===============*/
-
+nav {
+	float: left;
+}
+ 
 nav li {
 	float: left;
 	list-style: none;
 	margin: 0 20px;
 }
-nav {
-	float: left;
-}
-
-
+ 
 /*===============
 	TYPOGRAPHY
 ===============*/
 h1 {
 	font-size: 3em; /* 48px / 16px = 3em */
 }
-
+ 
 h2 {
 	font-size: 2.25em; /* 36px / 16px = 2.25em */
 }
-
+ 
 h3 {
 	font-size: 1.5em; /* 24px /16px = 1.5em */ 
 }
-
+ 
 p {
 	font-size: 1.25em; /* 20px */
 	line-height: 1.25em; /* 20px */
 }
-
+ 
 /* All Links */ 
 a {
 	color: #F00;
 	font-size: 1.25em; /* 20px */
 }
-
+ 
 footer a {
 	font-size: 1em; /* 20px / 20px = 1em  */
 }
-
-
+ 
+ 
 /*===============
 	LARGE DESKTOP
 ===============*/
@@ -99,9 +99,9 @@ footer a {
 	body {
 		background: red;	
 	}
-
+ 
 } /* end of Desktop */
-
+ 
 /*===============
 	STANDARD DESKTOP
 ===============*/
@@ -110,15 +110,21 @@ footer a {
 	body {
 		background: yellow;	
 	}
+	
+	aside {
+		text-align: center;
+	}
+	
 	.facts {
 		float: none;
-		text-align: left;
-		width: 100%;	
+		text-align: left;		
+		width: 100%;
 	}
-
-} /* end of Desktop */
-
-
+ 
+} /* end of Stadnard Desktop */
+ 
+ 
+ 
 /*===============
 	TABLET
 ===============*/
@@ -128,20 +134,22 @@ footer a {
 		background: green;	
 	}
 	
+	nav ul {
+		margin-left: 0;
+		padding: 0;
+	}
+	
 	nav li {
+		background: #0F9;
 		float: none;
-		margin: 2.0833333% 0; /*target is 20px, divide it by max-width of nav li, 
-						which is 100%, which is 960px in this context */
+		margin: 2.083333333333% 0; /* 20px / 960 */
+		padding: 1.5625% 0; /* 15px / 960 */
 		text-align: center;
 		width: inherit;
 	}
-	nav ul {
-		margin-left: 0;
-		padding: 0;	 
-	}
-	
+ 
 } /* end of tablet */
-
+ 
 /*===============
 	PHONE
 ===============*/
@@ -154,32 +162,5 @@ footer a {
 	aside {
 		float: none;	
 	}
-	
-	.facts {
-		width: 100%;
-		text-align: left;
-	}
-	aside {
-		text-align: center;
-	}
-
+ 
 } /* end of phone */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
